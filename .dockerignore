@@ -1,0 +1,13 @@
+.git
+.venv
+node_modules
+data
+.env
+.env.*
+*.sqlite*
+*.key
+*.log
+tests
+public
+deploy
+__pycache__

@@ -2,7 +2,7 @@
 
 > Socials is Lee Johnson's fork of [LightPost](https://github.com/brainstormity/LightPost) (MIT). The original licence and attribution are kept in [LICENSE](LICENSE). The Python package is still called `lightpost` so upstream fixes merge cleanly.
 
-> **Hosting note:** Socials is a long-running Python process with a SQLite file, an in-memory login session store and a built-in scheduler loop. Serverless hosts such as Vercel can't keep any of those between requests, so it needs a host with a persistent process and disk (a small VPS, Fly.io, Render or Railway with a volume). See the Socials ideas page on the ops site for the Vercel port plan.
+> **Hosting note:** Socials is a long-running Python process with a SQLite file, an in-memory login session store and a built-in scheduler loop. Serverless hosts such as Vercel can't keep any of those between requests, so it needs a host with a persistent process and disk (a small VPS, Fly.io, Render or Railway with a volume). Socials is set up for **Fly.io** (Dockerfile + fly.toml: one always-on 256 MB machine in London, SQLite and images on a `/data` volume). See [DEPLOY.md](DEPLOY.md) for the exact commands.
 
 **A lightweight system to automate posting to all of your socials from one dashboard.**
 
