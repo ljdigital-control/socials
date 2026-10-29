@@ -12,7 +12,7 @@ def main():
         host=config.host,
         port=config.port,
         access_log=None,
-        print=lambda _: print(f"LightPost: http://{config.host}:{config.port}"),
+        print=lambda _: print(f"Socials: http://{config.host}:{config.port}"),
     )
 
 

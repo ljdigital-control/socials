@@ -33,7 +33,7 @@ const icons = {
 const icon = (name) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">${icons[name] || ''}</svg>`;
 const brand =
-  '<a class="brand" href="/" aria-label="LightPost home"><img src="/favicon.svg" alt="" />LightPost</a>';
+  '<a class="brand" href="/" aria-label="Socials home"><img src="/favicon.svg" alt="" />Socials</a>';
 const platformLogos = new Set([
   'bluesky',
   'mastodon',
@@ -161,7 +161,7 @@ function themeToggle() {
   return `<button type="button" class="quiet small theme-toggle" data-action="toggle-theme" role="switch" aria-label="Dark theme" aria-checked="${dark}" title="Switch to ${dark ? 'light' : 'dark'} theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z" /></svg><span>Dark theme</span><span class="theme-switch" aria-hidden="true"></span></button>`;
 }
 function renderLanding() {
-  document.title = 'LightPost — your publishing desk';
+  document.title = 'Socials — your publishing desk';
   root.innerHTML = `<div class="landing"><header class="landing-header">${brand}<div class="landing-header-actions">${themeToggle()}<a class="button" href="/app">Open workspace ↗</a></div></header><main><section class="landing-hero"><h1>Automate posting to all of your socials from one dashboard</h1><div class="hero-platforms">${[
     ['bluesky', 'Bluesky'],
     ['mastodon', 'Mastodon'],
@@ -179,10 +179,10 @@ function renderLanding() {
     .map(([platform, name]) => `<span role="img" aria-label="${name}">${mark(platform)}</span>`)
     .join(
       '',
-    )}</div><p class="hero-description">One post. Your accounts. A time that works.<br>A small, open-source publishing desk you can self-host.</p><a class="button primary hero-cta" href="/app">Start creating <span aria-hidden="true">→</span></a><p class="hero-note">Free to self-host · MIT licensed · Your data stays with you</p></section></main><footer class="landing-footer">Not affiliated with any social platform. <a href="https://github.com/brainstormity/LightPost" target="_blank" rel="noopener noreferrer">Open source on GitHub ↗</a></footer></div>`;
+    )}</div><p class="hero-description">One post. Your accounts. A time that works.<br>A small, open-source publishing desk you can self-host.</p><a class="button primary hero-cta" href="/app">Start creating <span aria-hidden="true">→</span></a><p class="hero-note">Free to self-host · MIT licensed · Your data stays with you</p></section></main><footer class="landing-footer">Not affiliated with any social platform. Based on <a href="https://github.com/brainstormity/LightPost" target="_blank" rel="noopener noreferrer">LightPost</a> (MIT). <a href="https://github.com/ljdigital-control/socials" target="_blank" rel="noopener noreferrer">Source on GitHub ↗</a></footer></div>`;
 }
 function renderShell() {
-  document.title = 'LightPost — workspace';
+  document.title = 'Socials — workspace';
   root.innerHTML = `<aside class="sidebar">${brand}<nav class="nav" aria-label="Workspace">${[
     ['compose', 'New post'],
     ['posts', 'Posts'],

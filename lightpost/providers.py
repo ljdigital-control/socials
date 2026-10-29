@@ -307,7 +307,7 @@ class Transport:
             connector=aiohttp.TCPConnector(resolver=PublicResolver(), limit=6, ttl_dns_cache=60),
             timeout=aiohttp.ClientTimeout(total=30),
             trust_env=False,
-            headers={"User-Agent": "LightPost/0.2 (self-hosted)"},
+            headers={"User-Agent": "Socials/0.2 (self-hosted; LightPost-based)"},
         )
 
     async def __call__(

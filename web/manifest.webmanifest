@@ -1,0 +1,15 @@
+{
+  "name": "Socials",
+  "short_name": "Socials",
+  "description": "Post to all of your socials from one dashboard.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fafaf8",
+  "theme_color": "#2463df",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

@@ -615,7 +615,7 @@ async def export(request):
             ],
             "settings": await store.get("settings", "workspace"),
         },
-        headers={"Content-Disposition": 'attachment; filename="lightpost-content.json"'},
+        headers={"Content-Disposition": 'attachment; filename="socials-content.json"'},
     )
 
 
@@ -628,10 +628,13 @@ async def static(request):
     if (
         not path.is_relative_to(root)
         or not path.is_file()
-        or path.suffix not in (".html", ".js", ".css", ".svg", ".png", ".ico")
+        or path.suffix not in (".html", ".js", ".css", ".svg", ".png", ".ico", ".webmanifest")
     ):
         raise web.HTTPNotFound(text="Page not found.")
-    return web.FileResponse(path)
+    response = web.FileResponse(path)
+    if path.suffix == ".webmanifest":
+        response.content_type = "application/manifest+json"
+    return response
 
 
 async def lifecycle(app):

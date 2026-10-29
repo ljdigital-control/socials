@@ -85,7 +85,7 @@ export const guides = [
       },
       {
         title: 'Invite your Instagram account',
-        text: 'Select Instagram Tester under Additional roles for this app. Enter your own Instagram username and click Add to send the invitation. Use the account you want LightPost to publish to.',
+        text: 'Select Instagram Tester under Additional roles for this app. Enter your own Instagram username and click Add to send the invitation. Use the account you want Socials to publish to.',
         images: [
           {
             src: '/images/instagram/s7.png',
@@ -135,7 +135,7 @@ export const guides = [
       },
       {
         title: 'Generate a token for your account',
-        text: 'Expand Generate access tokens. If needed, use Add account to add the Instagram account whose tester invitation you accepted. Click Generate token beside that account. Webhook subscription can remain off for LightPost publishing.',
+        text: 'Expand Generate access tokens. If needed, use Add account to add the Instagram account whose tester invitation you accepted. Click Generate token beside that account. Webhook subscription can remain off for Socials publishing.',
         images: [
           {
             src: '/images/instagram/s12.png',
@@ -145,7 +145,7 @@ export const guides = [
       },
       {
         title: 'Authorize publishing access',
-        text: 'When the Instagram popup appears, log in to the same professional account you added as a tester. Review the requested access, ensure Access and publish content is enabled, then click Allow. LightPost needs profile/basic access and content publishing; comment, message, and insight features are not used by this app.',
+        text: 'When the Instagram popup appears, log in to the same professional account you added as a tester. Review the requested access, ensure Access and publish content is enabled, then click Allow. Socials needs profile/basic access and content publishing; comment, message, and insight features are not used by this app.',
         images: [
           {
             src: '/images/instagram/s14.png',
@@ -155,7 +155,7 @@ export const guides = [
       },
       {
         title: 'Copy and keep the token private',
-        text: 'In Token generated, select I understand, then Copy the token before closing the dialog. Use a long-lived Instagram Login user token; if your token is short-lived, follow Meta’s documented exchange before connecting it. LightPost does not perform the initial consent or token exchange. Never share the token in screenshots or commit it to Git.',
+        text: 'In Token generated, select I understand, then Copy the token before closing the dialog. Use a long-lived Instagram Login user token; if your token is short-lived, follow Meta’s documented exchange before connecting it. Socials does not perform the initial consent or token exchange. Never share the token in screenshots or commit it to Git.',
         images: [
           {
             src: '/images/instagram/s15.png',
@@ -164,8 +164,8 @@ export const guides = [
         ],
       },
       {
-        title: 'Connect your account in LightPost',
-        text: 'Open LightPost → Accounts → Connect account → Instagram. Paste the long-lived Instagram user token and select Verify & connect. Use an Instagram Login token, not a Facebook Page token. Your credentials are stored encrypted.',
+        title: 'Connect your account in Socials',
+        text: 'Open Socials → Accounts → Connect account → Instagram. Paste the long-lived Instagram user token and select Verify & connect. Use an Instagram Login token, not a Facebook Page token. Your credentials are stored encrypted.',
         images: [],
       },
     ],
@@ -180,7 +180,7 @@ export const guides = [
     estimatedTime: '3–5 minutes',
     account: 'Your own X (Twitter) account plus an X (Twitter) developer application',
     costNotice:
-      'X API is not free. You must buy API credits in the X Developer Console to use it with LightPost.',
+      'X API is not free. You must buy API credits in the X Developer Console to use it with Socials.',
     steps: [
       {
         title: 'Open the console and buy API credits',
@@ -227,13 +227,13 @@ export const guides = [
         ],
       },
       {
-        title: 'Connect in LightPost',
-        text: 'In LightPost → Accounts → Connect account → X (Twitter), enter the Consumer Key, Consumer Secret, Access Token, and Access Token Secret, then select Verify & connect. Account verification can consume API credits. LightPost asks you to confirm an estimated API cost before scheduling or publishing.',
+        title: 'Connect in Socials',
+        text: 'In Socials → Accounts → Connect account → X (Twitter), enter the Consumer Key, Consumer Secret, Access Token, and Access Token Secret, then select Verify & connect. Account verification can consume API credits. Socials asks you to confirm an estimated API cost before scheduling or publishing.',
         images: [],
       },
     ],
     limits:
-      'Up to 280 weighted characters and four JPEG/PNG images, 1 MB each. Images upload directly and are attached as media IDs; their source URLs are never appended to the caption. The $0.015 post-create estimate excludes other API operations; posts containing a caption URL are listed at $0.20. Check current charges in the X (Twitter) Developer Console. An app-only bearer token cannot publish. Another account needs its own authorized user token pair; LightPost does not provide that OAuth consent flow.',
+      'Up to 280 weighted characters and four JPEG/PNG images, 1 MB each. Images upload directly and are attached as media IDs; their source URLs are never appended to the caption. The $0.015 post-create estimate excludes other API operations; posts containing a caption URL are listed at $0.20. Check current charges in the X (Twitter) Developer Console. An app-only bearer token cannot publish. Another account needs its own authorized user token pair; Socials does not provide that OAuth consent flow.',
     troubleshooting:
       'If reads work but posting fails, verify write access and regenerate the user tokens after changing permissions. Check credits and account restrictions too.',
   },
@@ -242,7 +242,7 @@ export const guides = [
     titles: [
       'Create a webhook',
       'Choose your channel',
-      'Connect in LightPost',
+      'Connect in Socials',
       'Add more channels',
     ],
     name: 'Discord',
@@ -269,7 +269,7 @@ export const guides = [
           },
         ],
       },
-      'In LightPost → Accounts → Connect account → Discord, paste the URL and select Verify & connect.',
+      'In Socials → Accounts → Connect account → Discord, paste the URL and select Verify & connect.',
       'Create a separate webhook for each channel you want to post to. Select several destinations in the composer if needed.',
     ],
     limits:
@@ -285,13 +285,13 @@ export const guides = [
       'Create a bot',
       'Grant channel posting permission',
       'Choose the destination',
-      'Connect in LightPost',
+      'Connect in Socials',
     ],
     steps: [
       'Open the verified **@BotFather** account in Telegram. Send **/newbot**, follow its instructions and copy the **bot token** it gives you.',
       'Open your channel → Manage/Edit channel → Administrators → Add administrator. Add your new bot and enable **Post Messages**. Menu names vary between Telegram clients.',
       'For a public channel, use its **@username**. For a private channel, open the channel in [Telegram Web](https://web.telegram.org/k/) and copy the numeric value after **#** in the URL. If it does not already begin with **-100**, remove its leading minus sign and put **-100** before the remaining digits. Do not add the prefix twice.\nExample: **https://web.telegram.org/k/#-4528267057** contains **-4528267057**, so enter **-1004528267057** as the **channel ID**.\nAn invite link such as **t.me/+…** cannot be used as a channel ID.',
-      'In LightPost → Accounts → Connect account → Telegram, enter the **channel ID or @username** and **bot token**, then choose **Verify & connect**. This checks the bot and its permissions without posting a test message. The same bot can connect to several channels separately.',
+      'In Socials → Accounts → Connect account → Telegram, enter the **channel ID or @username** and **bot token**, then choose **Verify & connect**. This checks the bot and its permissions without posting a test message. The same bot can connect to several channels separately.',
     ],
     limits:
       'Channel posts only. Text up to 4,096 characters, or up to four JPEG/PNG images with one caption up to 1,024 characters. Images upload directly; no public image URL is needed. Groups, direct messages, videos and custom formatting are not supported in this version.',
@@ -300,14 +300,14 @@ export const guides = [
   },
   {
     id: 'bluesky',
-    titles: ['Open app passwords', 'Create a LightPost password', 'Enter your credentials'],
+    titles: ['Open app passwords', 'Create a Socials password', 'Enter your credentials'],
     name: 'Bluesky',
     estimatedTime: '30 seconds',
     account: 'Your own Bluesky account',
     steps: [
       'Sign into Bluesky and open Settings → Privacy and security → App passwords. Settings labels may vary between clients.',
-      'Create an app password named LightPost and copy it before closing the dialog.',
-      'In LightPost → Accounts → Connect account → Bluesky, enter your handle and the app password.\n*Leave Home server blank for accounts hosted on bsky.social. For a different host, enter your actual public HTTPS personal data server (PDS) address.*\n*Select Verify & connect. Repeat with the credentials for each additional account.*',
+      'Create an app password named Socials and copy it before closing the dialog.',
+      'In Socials → Accounts → Connect account → Bluesky, enter your handle and the app password.\n*Leave Home server blank for accounts hosted on bsky.social. For a different host, enter your actual public HTTPS personal data server (PDS) address.*\n*Select Verify & connect. Repeat with the credentials for each additional account.*',
     ],
     limits:
       'Text up to 300 graphemes and four local images, up to 1 MB each. The app refreshes its session as it posts.',
@@ -320,16 +320,16 @@ export const guides = [
       'Create an application',
       'Set publishing permissions',
       'Copy your access token',
-      'Connect in LightPost',
+      'Connect in Socials',
     ],
     name: 'Mastodon',
     estimatedTime: '1 minute',
     account: 'Your own account on a public Mastodon instance',
     steps: [
       'In your instance’s web interface, open Settings → Development → New application.',
-      'Name the application LightPost and enable **read:accounts**, **write:statuses** and **write:media**.',
+      'Name the application Socials and enable **read:accounts**, **write:statuses** and **write:media**.',
       'Save the application and copy the access token shown for your account.',
-      'In LightPost → Accounts → Connect account → Mastodon, enter the instance URL and access token.\n\n*Select Verify & connect. Each account needs its own token, even on the same instance.*',
+      'In Socials → Accounts → Connect account → Mastodon, enter the instance URL and access token.\n\n*Select Verify & connect. Each account needs its own token, even on the same instance.*',
     ],
     limits:
       'Public text posts, conservatively limited to 500 characters, and four images up to 1 MB each. Instance-specific restrictions still apply.',
@@ -357,13 +357,13 @@ export const guides = [
       'Open [Meta for Developers](https://developers.facebook.com/apps/) and select your existing app, or create an app. Add the Manage everything on your Page use case. Add pages_manage_posts and its dependencies pages_read_engagement and pages_show_list where available in the app dashboard.',
       'Open [Graph API Explorer](https://developers.facebook.com/tools/explorer/), select the same Meta app, and generate a User Access Token requesting those Page permissions. During authorization, select the Facebook Page you want to manage. If you change permissions, generate a new token; adding them in the dashboard does not update an old token.',
       'In [Graph API Explorer](https://developers.facebook.com/tools/explorer/), run GET me/accounts?fields=id,name,access_token,tasks with the User token. Find your Page and copy its id and access_token. The token inside the Page entry is the Page access token. An empty data list can mean no Page is managed by this account, missing permissions, or that the Page was not selected during authorization.',
-      'Open [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken/), paste the **Page access token**, and click **Debug**. Scroll down and click Extend Access Token if that option is available. Copy the resulting Page token, debug it again, and confirm **Type: Page** and **Expires: Never** before saving it in LightPost.\n\n*If the token still has an expiry date, extend the User token in the debugger, then use that long-lived User token in Graph API Explorer to request the Page token again with GET me/accounts?fields=id,name,access_token,tasks. Check the new Page token in the debugger. Never means no scheduled expiry; permission or account-security changes can still invalidate it.*',
-      'In LightPost → Accounts → Connect account → Facebook Pages, enter the Page ID and Page access token. Verify & connect checks the Page identity without publishing a test post.',
+      'Open [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken/), paste the **Page access token**, and click **Debug**. Scroll down and click Extend Access Token if that option is available. Copy the resulting Page token, debug it again, and confirm **Type: Page** and **Expires: Never** before saving it in Socials.\n\n*If the token still has an expiry date, extend the User token in the debugger, then use that long-lived User token in Graph API Explorer to request the Page token again with GET me/accounts?fields=id,name,access_token,tasks. Check the new Page token in the debugger. Never means no scheduled expiry; permission or account-security changes can still invalidate it.*',
+      'In Socials → Accounts → Connect account → Facebook Pages, enter the Page ID and Page access token. Verify & connect checks the Page identity without publishing a test post.',
     ],
     limits:
       'Page feed posts only: text up to the app’s 10,000-character limit, and up to four JPEG/PNG images. Images upload directly from this server; public image URLs are not required. Videos, Reels, Stories, groups and personal-profile posting are not included.',
     troubleshooting:
-      'A connection verifies Page identity; publishing still needs the correct Page permissions. If Meta rejects a post, check the token’s granted permissions and your Page content access. For reliable scheduling, derive the Page token from a long-lived User token and check expiration in Meta’s [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken/). LightPost does not extend Facebook tokens automatically. Tokens can expire or be revoked; use Reconnect to replace them. Check the Page before retrying an uncertain delivery.',
+      'A connection verifies Page identity; publishing still needs the correct Page permissions. If Meta rejects a post, check the token’s granted permissions and your Page content access. For reliable scheduling, derive the Page token from a long-lived User token and check expiration in Meta’s [Access Token Debugger](https://developers.facebook.com/tools/debug/accesstoken/). Socials does not extend Facebook tokens automatically. Tokens can expire or be revoked; use Reconnect to replace them. Check the Page before retrying an uncertain delivery.',
   },
   {
     id: 'threads',
@@ -371,7 +371,7 @@ export const guides = [
       'Create your Meta app',
       'Add and authorize your own account',
       'Get a long-lived token',
-      'Connect in LightPost',
+      'Connect in Socials',
     ],
     name: 'Threads',
     account: 'Your own Threads account',
@@ -382,12 +382,12 @@ export const guides = [
       'Create a [Meta developer app](https://developers.facebook.com/apps/) with the Threads API use case.',
       'In your [Meta app](https://developers.facebook.com/apps/), add your Threads account as a tester or app-role user. Open [Threads](https://www.threads.com/) to accept the invitation and authorize the requested scopes.',
       'Use the [Threads developer setup](https://developers.facebook.com/docs/threads/) and [long-lived token instructions](https://developers.facebook.com/docs/threads/get-started/long-lived-tokens/) to generate and exchange a user token for a long-lived token.',
-      'In LightPost → Accounts → Connect account → Threads, paste the token and verify the connection.',
+      'In Socials → Accounts → Connect account → Threads, paste the token and verify the connection.',
     ],
     limits:
-      'Text up to 500 characters, or one public HTTPS JPEG up to 1 MB. Use Add Image for the image. LightPost waits for a container’s processing to finish before confirming publication.',
+      'Text up to 500 characters, or one public HTTPS JPEG up to 1 MB. Use Add Image for the image. Socials waits for a container’s processing to finish before confirming publication.',
     troubleshooting:
-      'Use a Threads token, not an Instagram token. Check tester authorization and both scopes. LightPost refreshes connected long-lived Meta tokens after seven days when used; expired or revoked tokens require reconnecting.',
+      'Use a Threads token, not an Instagram token. Check tester authorization and both scopes. Socials refreshes connected long-lived Meta tokens after seven days when used; expired or revoked tokens require reconnecting.',
   },
   {
     id: 'linkedin',
@@ -396,7 +396,7 @@ export const guides = [
     approval:
       'Create a [LinkedIn developer app](https://www.linkedin.com/developers/apps). LinkedIn may ask you to associate and verify a LinkedIn Page for the app. Posting here uses your personal profile; organization Pages need separate permissions and are not supported.',
     credentials:
-      'One member access token with openid, profile and w_member_social. Use LinkedIn’s [official token generator](https://www.linkedin.com/developers/tools/oauth/token-generator); no client secret needs to be pasted into LightPost.',
+      'One member access token with openid, profile and w_member_social. Use LinkedIn’s [official token generator](https://www.linkedin.com/developers/tools/oauth/token-generator); no client secret needs to be pasted into Socials.',
     titles: [
       'Create an app',
       'Enable both products',
@@ -407,11 +407,11 @@ export const guides = [
       'Open the [LinkedIn developer portal](https://developer.linkedin.com/), sign in, then open [My apps](https://www.linkedin.com/developers/apps) → Create app. Complete the application details and Page verification if LinkedIn requests it.',
       'In your [developer app](https://www.linkedin.com/developers/apps), open Products and request Share on LinkedIn and Sign In with LinkedIn using OpenID Connect. Wait until both products are available and Auth lists openid, profile and w_member_social.',
       'From the signed-in developer portal, open Docs and tools → [Token Generator](https://www.linkedin.com/developers/tools/oauth/token-generator). Choose your app, Member authorization code (3-legged), and the openid, profile and w_member_social scopes. Sign in as the member who will publish, approve access, then copy the access token.',
-      'In LightPost → Accounts → Connect account → LinkedIn, paste the Member access token and choose Verify & connect. Repeat for another personal profile with that member’s own authorized token.',
+      'In Socials → Accounts → Connect account → LinkedIn, paste the Member access token and choose Verify & connect. Repeat for another personal profile with that member’s own authorized token.',
     ],
     limits:
       'Public personal-profile posts with text up to 3,000 characters and up to four images, 1 MB each. Images upload directly to LinkedIn; a public image URL is not required. Links can be included in the text. Company Pages and videos are not supported.',
     troubleshooting:
-      'If account verification fails, check openid and profile. If verification works but publishing fails, check w_member_social and the Share on LinkedIn product. Tokens expire or can be revoked; use the [Token Generator](https://www.linkedin.com/developers/tools/oauth/token-generator) again and Reconnect to replace the saved token. Self-service access tokens are not automatically refreshed by LightPost.',
+      'If account verification fails, check openid and profile. If verification works but publishing fails, check w_member_social and the Share on LinkedIn product. Tokens expire or can be revoked; use the [Token Generator](https://www.linkedin.com/developers/tools/oauth/token-generator) again and Reconnect to replace the saved token. Self-service access tokens are not automatically refreshed by Socials.',
   },
 ];
