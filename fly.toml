@@ -1,5 +1,5 @@
 # Fly.io config for Socials. If the name "socials" is taken, change app to "socials-lee".
-app = "socials"
+app = "socials-lee"
 primary_region = "lhr"
 
 [build]
