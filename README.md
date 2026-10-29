@@ -1,4 +1,6 @@
-# Socials
+<p align="center"><img src="brand/logo-512.png" alt="Socials logo: a white speech bubble with round glasses and headphones" width="160" /></p>
+
+<h1 align="center">Socials</h1>
 
 > Socials is Lee Johnson's fork of [LightPost](https://github.com/brainstormity/LightPost) (MIT). The original licence and attribution are kept in [LICENSE](LICENSE). The Python package is still called `lightpost` so upstream fixes merge cleanly.
 
